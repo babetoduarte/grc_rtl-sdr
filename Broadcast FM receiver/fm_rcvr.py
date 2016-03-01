@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 ##################################################
 # GNU Radio Python Flow Graph
-# Title: Top Block
-# Generated: Mon Feb 29 20:50:21 2016
+# Title: FM Receiver Block
+# Author: Jorge A. Duarte .
+# Description: This flow graph allows to tune broadcast FM Stations using an RTL-SDR dongle
+# Generated: Mon Feb 29 22:20:57 2016
 ##################################################
 
 if __name__ == '__main__':
@@ -34,10 +36,10 @@ import time
 import wx
 
 
-class top_block(grc_wxgui.top_block_gui):
+class fm_rcvr(grc_wxgui.top_block_gui):
 
     def __init__(self):
-        grc_wxgui.top_block_gui.__init__(self, title="Top Block")
+        grc_wxgui.top_block_gui.__init__(self, title="FM Receiver Block")
 
         ##################################################
         # Variables
@@ -222,7 +224,7 @@ class top_block(grc_wxgui.top_block_gui):
         self.low_pass_filter_0.set_taps(firdes.low_pass(1, 500000, self.cutoff_freq, 8000, firdes.WIN_HAMMING, 6.76))
 
 
-def main(top_block_cls=top_block, options=None):
+def main(top_block_cls=fm_rcvr, options=None):
 
     tb = top_block_cls()
     tb.Start(True)

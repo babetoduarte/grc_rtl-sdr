@@ -6,7 +6,7 @@
     <key>options</key>
     <param>
       <key>author</key>
-      <value></value>
+      <value>Jorge A. Duarte .</value>
     </param>
     <param>
       <key>window_size</key>
@@ -22,7 +22,7 @@
     </param>
     <param>
       <key>description</key>
-      <value></value>
+      <value>This flow graph allows to tune broadcast FM Stations using an RTL-SDR dongle</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -46,7 +46,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>top_block</value>
+      <value>fm_rcvr</value>
     </param>
     <param>
       <key>max_nouts</key>
@@ -78,7 +78,7 @@
     </param>
     <param>
       <key>title</key>
-      <value></value>
+      <value>FM Receiver Block</value>
     </param>
   </block>
   <block>
